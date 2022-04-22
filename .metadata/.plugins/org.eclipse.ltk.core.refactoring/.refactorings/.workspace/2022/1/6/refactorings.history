@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HBProj1-SaveObj&apos; to &apos;01-HBProj-SaveObj&apos;" description="Rename resource &apos;HBProj1-SaveObj&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/HBProj1-SaveObj" name="01-HBProj-SaveObj" stamp="1643643863352" updateReferences="true"/>
+</session>

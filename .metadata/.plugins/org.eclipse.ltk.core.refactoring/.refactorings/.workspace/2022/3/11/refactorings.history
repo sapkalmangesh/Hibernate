@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HBProject_saveStudentObjInDB&apos; to &apos;00-HBProject_saveStudentObjInDB&apos;" description="Rename resource &apos;HBProject_saveStudentObjInDB&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/HBProject_saveStudentObjInDB" name="00-HBProject_saveStudentObjInDB" stamp="1646660858731" updateReferences="true"/>
+</session>

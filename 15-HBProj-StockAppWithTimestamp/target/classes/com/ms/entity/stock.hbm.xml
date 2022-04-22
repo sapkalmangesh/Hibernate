@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>    
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.ms.entity.Stock" table="STOCK_INFO">
+		<id name="stockId" column="SID">
+			<generator class="increment" />
+		</id>
+		<timestamp name="lastUpdate" />
+		<property name="stockName" column="NAME" length="20" />
+		<property name="stockPrice" column="PRICE" />
+		<property name="exchange" column="EXCHANGE" length="20" />
+
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>    
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.ms.in.entity.Person" table="HB_INH_PERSON_TPCH"
+		discriminator-value="per">
+		<id name="pid" column="PID">
+			<generator class="increment" />
+		</id>
+		<discriminator column="PERSON_TYPE" type="string"
+			length="10"></discriminator>
+		<property name="pname" />
+		<property name="addr" />
+		<subclass name="com.ms.in.entity.Employee"
+			discriminator-value="emp">
+			<property name="desg" />
+			<property name="compony" />
+			<property name="salary" />
+		</subclass>
+		<subclass name="com.ms.in.entity.Customer"
+			discriminator-value="cust">
+			<property name="billAmt" />
+			<property name="billNo" />
+		</subclass>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- in bellow line if we define polymorphism = "explicit" then frome person 
+		table get only person related record not sub class record -->
+	<class name="com.ms.in.entity.Person" table="HB_INH_PERSON_TPCC1"
+		polymorphism="explicit">
+		<id name="pid" column="PID">
+			<generator class="increment" />
+		</id>
+		<property name="pname" />
+		<property name="addr" />
+	</class>
+	<class name="com.ms.in.entity.Employee" table="HB_INH_EMP_TPCC1">
+		<id name="pid" column="PID">
+			<generator class="increment" />
+		</id>
+		<property name="pname" />
+		<property name="addr" />
+		<property name="desg" />
+		<property name="compony" />
+		<property name="salary" />
+	</class>
+	<class name="com.ms.in.entity.Customer" table="HB_INH_CUST_TPCC1">
+		<id name="pid" column="PID">
+			<generator class="increment" />
+		</id>
+		<property name="pname" />
+		<property name="addr" />
+		<property name="billAmt" />
+		<property name="billNo" />
+	</class>
+</hibernate-mapping>
